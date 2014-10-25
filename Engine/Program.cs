@@ -1,4 +1,5 @@
 ﻿using System;
+using Engine.Math;
 
 namespace Engine
 {
@@ -6,8 +7,6 @@ namespace Engine
     {
         static void Main(string[] args)
         {
-            var vector = new Vector3(4, 5, 7);
-            Console.Write("{0}\n", vector);
         }
     }
 }
