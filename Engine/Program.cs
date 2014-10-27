@@ -7,9 +7,9 @@ namespace Engine
     {
         static void Main()
         {
-            var vector = Vector3.Forward;
+            var vector = new Vector2(1, 2);
 
-            Console.Write(vector + "\n");
+            Console.Write(vector.Normalize().Normalize() + "\n");
         }
     }
 }
