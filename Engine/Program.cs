@@ -1,10 +1,15 @@
-﻿namespace Engine
+﻿using System;
+using Engine.Math;
+
+namespace Engine
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            var vector = Vector3.Forward;
 
+            Console.Write(vector + "\n");
         }
     }
 }

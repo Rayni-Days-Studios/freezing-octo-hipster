@@ -1,4 +1,4 @@
-﻿namespace Engine
+﻿namespace Engine.Math
 {
     class Vector3
     {
@@ -8,6 +8,14 @@
             Y = y;
             Z = z;
         }
+
+        public static Vector3 Zero = new Vector3(0, 0, 0);
+        public static Vector3 Up = new Vector3(0, 1, 0);
+        public static Vector3 Down = -Up;
+        public static Vector3 Right = new Vector3(1, 0, 0);
+        public static Vector3 Left = -Right;
+        public static Vector3 Forward = new Vector3(0, 0, 1);
+        public static Vector3 Back = -Forward;
 
         public float X { get; set; }
 
@@ -33,6 +41,11 @@
         public static Vector3 operator -(Vector3 a, Vector3 b)
         {
             return new Vector3(a.X - b.X, a.Y - b.Y, a.Z - b.Z);
+        }
+
+        public static Vector3 operator -(Vector3 vector)
+        {
+            return new Vector3(-vector.X, -vector.Y, -vector.Z);
         }
 
         public static Vector3 operator *(Vector3 a, float b)
