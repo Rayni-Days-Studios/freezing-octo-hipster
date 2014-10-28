@@ -7,9 +7,9 @@ namespace Engine
     {
         static void Main()
         {
-            var vector = new Vector2(300, 360);
+            var vector = Vector2.Down;
 
-            Console.Write(vector.Normalize() + "\n");
+            Console.Write(vector + "\n");
         }
     }
 }
